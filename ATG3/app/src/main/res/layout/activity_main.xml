@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02021E"
+    android:id="@+id/drawerlayout"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recyclerview"
+    ></androidx.recyclerview.widget.RecyclerView>
+
+   <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomnavigation"
+        android:background="@drawable/back"
+        app:menu="@menu/bottom_navigation"
+        android:layout_alignParentBottom="true"/>-->
+   <!-- <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:tashieloader_animDelay="100"
+        app:tashieloader_animDur="100"
+        app:tashieloader_dotsColor="#626277"
+        android:id="@+id/tash"
+        android:layout_marginTop="690dp"
+        android:layout_centerHorizontal="true"
+        app:tashieloader_dotsDist="5dp"
+        android:background="@drawable/back"
+        app:tashieloader_dotsRadius="4dp"
+        android:visibility="visible"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="6" />-->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progressbar"
+        android:visibility="visible"
+        android:layout_above="@+id/bottomnavigation"
+        />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:id="@+id/navigationView"
+        android:background="#02021E"
+        app:itemTextColor="#FCFCFC"
+        ></com.google.android.material.navigation.NavigationView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
